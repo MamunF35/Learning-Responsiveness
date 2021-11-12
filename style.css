@@ -1,0 +1,37 @@
+.menu-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.food{
+    border: 3px solid red;
+    width: 300px;
+}
+@media only screen and (max-width:768px){
+    .food{
+        background-color: blue;
+        margin-top: 40px;
+    }
+    .food h2{
+        text-align: center;
+    }
+    .food p{
+        text-align: justify;
+        margin:5px;
+    }
+    .food img,button{
+        width: 100%;
+    }
+    .food button{
+        font-size: 1.5em;
+        background-color: orange;
+        color: white;
+        font-weight: 700;
+    }
+    .menu-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
